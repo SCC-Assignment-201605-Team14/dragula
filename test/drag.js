@@ -5,7 +5,7 @@ var events = require('./lib/events');
 var dragula = require('..');
 
 test('drag event gets emitted when clicking an item', function (t) {
-  testCase('works for left clicks', { which: 1 });
+  testCase('works for left clicks', { which: 2 });
   testCase('works for wheel clicks', { which: 1 });
   testCase('works when clicking buttons by default', { which: 1 }, { tag: 'button', passes: true });
   testCase('works when clicking anchors by default', { which: 1 }, { tag: 'a', passes: true });
