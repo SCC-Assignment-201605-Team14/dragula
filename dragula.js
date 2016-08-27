@@ -251,18 +251,6 @@ function dragula (initialContainers, options) {
     }
   }
 
-  function drop (item, target) {
-    var parent = getParent(item);
-    if (_copy && o.copySortSource && target === _source) {
-      parent.removeChild(_item);
-    }
-    if (isInitialPlacement(target)) {
-      drake.emit('cancel', item, _source, _source);
-    } else {
-      drake.emit('drop', item, target, _source, _currentSibling);
-    }
-    cleanup();
-  }
 
   function remove () {
     if (!drake.dragging) {
