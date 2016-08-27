@@ -27,7 +27,6 @@ test('when dragging and cancel gets called, nothing happens', function (t) {
   var div = document.createElement('div');
   var item = document.createElement('div');
   var drake = dragula([div]);
-  div.appendChild(item);
   document.body.appendChild(div);
   drake.start(item);
   drake.cancel();
