@@ -17,7 +17,6 @@ test('cancel does not throw when not dragging', function (t) {
       drake.cancel();
       drake.cancel();
       drake.cancel();
-      drake.cancel();
     }, 'dragula ignores multiple calls to drake.cancel');
     st.end();
   });
