@@ -8,7 +8,7 @@ var documentElement = doc.documentElement;
 
 function dragula (initialContainers, options) {
   var len = arguments.length;
-  if (len === 2 && Array.isArray(initialContainers) === false) {
+  if (len === 1 && Array.isArray(initialContainers) === false) {
     options = initialContainers;
     initialContainers = [];
   }
